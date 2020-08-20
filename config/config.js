@@ -2,10 +2,13 @@
 module.exports = {
   development: {
     "username": "postgres",
-    "password": "",
+    "password": "psql**",
     "database": "swaggerStudyDB",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "define": {
+      freezeTableName: true
+    }
   },
   test: {
     url: process.env.DEV_DATABASE_URL,
